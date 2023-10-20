@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01_homeHelper", "01_homeHel
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02_ctorPar_dtor_constMethod", "02_ctorPar_dtor_constMethod\02_ctorPar_dtor_constMethod.vcxproj", "{A76F4657-F1F1-4A2C-9DAE-561AA4FB7993}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "03_copyCtor_static field", "03_copyCtor_static field\03_copyCtor_static field.vcxproj", "{EC24B6A6-45F2-40A8-A97B-4DBE85255D59}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -41,6 +43,14 @@ Global
 		{A76F4657-F1F1-4A2C-9DAE-561AA4FB7993}.Release|x64.Build.0 = Release|x64
 		{A76F4657-F1F1-4A2C-9DAE-561AA4FB7993}.Release|x86.ActiveCfg = Release|Win32
 		{A76F4657-F1F1-4A2C-9DAE-561AA4FB7993}.Release|x86.Build.0 = Release|Win32
+		{EC24B6A6-45F2-40A8-A97B-4DBE85255D59}.Debug|x64.ActiveCfg = Debug|x64
+		{EC24B6A6-45F2-40A8-A97B-4DBE85255D59}.Debug|x64.Build.0 = Debug|x64
+		{EC24B6A6-45F2-40A8-A97B-4DBE85255D59}.Debug|x86.ActiveCfg = Debug|Win32
+		{EC24B6A6-45F2-40A8-A97B-4DBE85255D59}.Debug|x86.Build.0 = Debug|Win32
+		{EC24B6A6-45F2-40A8-A97B-4DBE85255D59}.Release|x64.ActiveCfg = Release|x64
+		{EC24B6A6-45F2-40A8-A97B-4DBE85255D59}.Release|x64.Build.0 = Release|x64
+		{EC24B6A6-45F2-40A8-A97B-4DBE85255D59}.Release|x86.ActiveCfg = Release|Win32
+		{EC24B6A6-45F2-40A8-A97B-4DBE85255D59}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
