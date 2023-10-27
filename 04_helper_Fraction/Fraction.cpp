@@ -68,3 +68,9 @@ Fraction Fraction::operator%(int n)
     return tmp;
 }
 // 1/5
+
+std::ostream& operator<<(std::ostream& out, const Fraction& data)
+{
+    out << data.num << "/" << data.denum;
+    return out;
+}

@@ -49,3 +49,22 @@ MyArray MyArray::operator()(const int& start, const int& end) const
         tmp[i - start_] = this->arr[i];
     }return tmp;
 }
+
+const std::ostream& operator<<(ostream& out, const MyArray& data)
+{
+    for (size_t i = 0; i < data.size; i++)
+    {
+        out << data[i] << "\t";
+    }
+    out << "\n";
+    return out;
+}
+
+std::istream& operator>>(istream& in, MyArray& data)
+{
+    for (size_t i = 0; i < data.size; i++)
+    {
+        in >> data[i];
+    }
+    return in;
+}

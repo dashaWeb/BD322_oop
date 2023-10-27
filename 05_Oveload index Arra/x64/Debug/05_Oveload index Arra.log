@@ -1,5 +1,2 @@
 ﻿  05_Oveload index Arra.cpp
-  MyArray.cpp
-C:\Users\dev\source\repos\BD322_oop\05_Oveload index Arra\MyArray.cpp(49,23): warning C4267: 'argument': conversion from 'size_t' to 'const int', possible loss of data
-  Generating Code...
   05_Oveload index Arra.vcxproj -> C:\Users\dev\source\repos\BD322_oop\x64\Debug\05_Oveload index Arra.exe

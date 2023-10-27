@@ -24,6 +24,8 @@ public:
 	int operator[](const int& index) const; // отримали доступ за індексом на читання
 	int& operator[](const int& index); // отримали доступ за індексом на запис
 	MyArray operator()(const int& start, const int& end) const;
+	friend const std::ostream& operator<<(ostream& out, const MyArray& data); // cout
+	friend std::istream& operator>>(istream& in, MyArray& data); // cin
 private:
 	int* arr = nullptr;
 	size_t size = 0;

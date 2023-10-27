@@ -12,5 +12,10 @@ int main()
     cout << "Element index [0] --> " << arr[0] << endl;
     MyArray array_slice = arr(1, 5);
     array_slice.print();
+    cout << array_slice;
+    cin >> array_slice;
+    array_slice.print();
+
+
 }
 
