@@ -1,0 +1,4 @@
+﻿  08_stack.cpp
+C:\Users\dev\source\repos\BD322_oop\08_stack\08_stack.cpp(17,22): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\dev\source\repos\BD322_oop\08_stack\08_stack.cpp(18,22): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  08_stack.vcxproj -> C:\Users\dev\source\repos\BD322_oop\x64\Debug\08_stack.exe

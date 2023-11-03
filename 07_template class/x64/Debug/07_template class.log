@@ -1,0 +1,5 @@
+﻿  07_template class.cpp
+C:\Users\dev\source\repos\BD322_oop\07_template class\Matix.h(13,10): warning C4348: 'operator <<': redefinition of default parameter: parameter 1
+C:\Users\dev\source\repos\BD322_oop\07_template class\Matix.h(54,17): message : see declaration of 'operator <<'
+C:\Users\dev\source\repos\BD322_oop\07_template class\07_template class.cpp(14,26): message : see reference to class template instantiation 'Matrix<double,3,4>' being compiled
+  07_template class.vcxproj -> C:\Users\dev\source\repos\BD322_oop\x64\Debug\07_template class.exe
