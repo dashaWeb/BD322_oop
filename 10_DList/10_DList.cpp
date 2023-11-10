@@ -56,6 +56,10 @@ int main()
 	cout << "Print  Clone  :: ";
 	clone.print();
 	cout << "Print  Clone2 :: ";
+	clone2.addHead(333);
+	clone2.print();
+	clone2.reverse();
+	cout << "Print  Clone2 :: ";
 	clone2.print();
 }
 

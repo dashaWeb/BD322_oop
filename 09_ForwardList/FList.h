@@ -26,7 +26,7 @@ public:
 	bool isEmpty() const;
 	void removeHead();
 	size_t getSize() const;
-	FList<T> clone();
+	FList<T> operator+(const FList<T>& other) const;
 	//void clear(); // очищення вього списка
 	//void addTail(const T& data); // додати нову ноду в кінець списка
 	// * перевантажити оператор += результат новий список, який обєднав два списка
@@ -106,7 +106,7 @@ inline size_t FList<T>::getSize() const
 }
 
 template<typename T>
-inline FList<T> FList<T>::clone()
+inline FList<T> FList<T>::operator+(const FList<T>& other) const
 {
 	FList<T> tmp;
 	Node<T>* tmp_ = this->head;
@@ -115,5 +115,13 @@ inline FList<T> FList<T>::clone()
 		tmp.addTail(tmp_->data);
 		tmp_ = tmp_->next;
 	}
+	tmp_ = other.head;
+	while (tmp_ != nullptr)
+	{
+		tmp.addTail(tmp_->data);
+		tmp_ = tmp_->next;
+	}
 	return tmp;
 }
+
+

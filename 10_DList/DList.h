@@ -32,6 +32,7 @@ public:
 	bool isEmpty() const;
 	void removeData(const T& data);
 	void clear();
+	void reverse();
 
 private:
 	Node<T>* findData(const T& data);
@@ -90,7 +91,7 @@ inline void DList<T>::removeHead()
 template<typename T>
 inline void DList<T>::removeTail()
 {
-	
+
 }
 
 template<typename T>
@@ -143,12 +144,47 @@ inline void DList<T>::removeData(const T& data)
 	find->next->prev = find->prev;
 	delete find;
 	--size;
-	
+
 }
 
 template<typename T>
 inline void DList<T>::clear()
 {
+	size_t size_ = size;
+	for (size_t i = 0; i < size_; i++)
+	{
+		removeHead();
+	}
+}
+
+template<typename T>
+inline void DList<T>::reverse()
+{
+	/*DList<T> tmp;
+	Node<T>* tmp_ = head;
+	while (tmp_ != nullptr)
+	{
+		tmp.addHead(tmp_->data);
+		tmp_ = tmp_->next;
+	}
+	clear();
+	head = tmp.head;*/
+
+	Node<T>* tmp = nullptr;
+
+	tmp = head;
+	head = tail;
+	tail = tmp;
+
+	Node<T>* current = tail;
+
+	while (current != nullptr)
+	{
+		tmp = current->prev;
+		current->prev = current->next;
+		current->next = tmp;
+		current = current->prev;
+	}	
 }
 
 template<typename T>
