@@ -13,14 +13,15 @@ public:
 	{
 		cout << "Wolf dtor (" << this->id << ". " << this->name << ")" << endl;
 	}
-	void print() 
+	virtual void print() const override
 	{
+		cout << "\t----------Wolf---------" << endl;
 		Animal::print();
 		cout << "Weight :: " << weight << endl;
-		this->setAge(45);
-		
 	}
-private:
+	void eat() const override;
+	void move() const override;
+protected:
 	size_t weight;
 };
 
