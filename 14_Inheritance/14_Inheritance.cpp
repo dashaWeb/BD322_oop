@@ -18,12 +18,16 @@ int main()
     dog.print();
     cout << "\n\n";
 
-    /*vector<Animal*> zoo = { (Animal*)&wolf,(Animal*)&lion, (Animal*)&dog };
+    vector<Animal*> zoo = { &wolf,(Animal*)&lion, (Animal*)&dog };
     for (auto& item : zoo)
     {
         item->print();
         item->move();
         item->eat();
-    }*/
-
+    }
+    Animal** zoo = new Animal * [3] {new Wolf("Test", 4, 45), &wolf, &lion};
+    for (size_t i = 0; i < 3; i++)
+    {
+        zoo[i]->print();
+    }
 }

@@ -1,6 +1,6 @@
 #pragma once
 #include "Animal.h"
-class Lion :protected Animal // private, protected
+class Lion :public Animal // private, protected
 {
 public:
 	Lion(string name, const size_t& age, size_t weight)
