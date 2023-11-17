@@ -114,6 +114,7 @@ public:
 class Circle : public IShape
 {
     double radius;
+    bool flag = false;
 public:
     Circle(const double& radius)
         :radius{radius}
@@ -124,18 +125,62 @@ public:
     {
         return pow(radius, 2) * 3.14;
     }
+    void start() {
+        cout << "Start " << endl;
+        flag = true;
+    }
+    void stop() {
+        cout << "Stop " << endl;
+        flag = false;
+    }
+    void up() {
+        if (flag) {
+            radius++;
+        }
+        cout << radius << endl;
+    }
+    void down() {
+        if (flag) {
+            radius--;
+        }
+        cout << radius << endl;
+    }
+    void testDrive()
+    {
+        char s;
+        while (true)
+        {
+            s = _getch();
+            if (s == 27) break;
+            switch (s)
+            {
+            case 72:
+                start();
+                break;
+            case 80:
+                stop();
+                break;
+            case 43:
+                up();
+                break;
+            case 45:
+                down();
+             //up:72, down 80, + 43, - 45
+            }
+        }
+    }
 };
 int main()
 {
-    char s;
+    /*char s;
     do
     {
         s = _getch();
         cout << s << " \t " << (int)s << endl;
-    } while (s != 27);
+    } while (s != 27);*/
     
 
-   /* Rectangle shape_1(10, 15);
+    Rectangle shape_1(10, 15);
     cout << "Rectangle :: " << shape_1.getArea() << endl;
     Square shape_2(5);
     cout << "Square :: " << shape_2.getArea() << endl;
@@ -146,8 +191,8 @@ int main()
     for (size_t i = 0; i < 3; i++)
     {
         cout << typeid(shapes[i]).name() << " \t " << shapes[i]->getArea() << endl;
-    }*/
-
+    }
+    circle.testDrive();
 
     /*Bird bird(50, 100);
     bird.move();
