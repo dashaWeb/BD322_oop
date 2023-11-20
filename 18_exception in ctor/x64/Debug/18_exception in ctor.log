@@ -1,0 +1,3 @@
+﻿  18_exception in ctor.cpp
+C:\Users\dev\source\repos\BD322_oop\18_exception in ctor\18_exception in ctor.cpp(14,40): warning C4101: 'ex': unreferenced local variable
+  18_exception in ctor.vcxproj -> C:\Users\dev\source\repos\BD322_oop\x64\Debug\18_exception in ctor.exe
