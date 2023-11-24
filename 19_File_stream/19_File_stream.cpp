@@ -4,6 +4,9 @@
 #include <vector>
 
 using namespace std;
+//using std::strcpy_s;
+//using std::cout;
+//using std::endl;
 
 const size_t SIZE = 20;
 class Train {
