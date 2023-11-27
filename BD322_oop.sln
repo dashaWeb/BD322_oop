@@ -69,6 +69,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "20_Namespaces", "20_Namespa
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "17_helper home interface", "17_helper home interface\17_helper home interface.vcxproj", "{CD1523B8-36F4-4ED1-A315-868B2EE13BEF}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "21_stl_array_vector_deque", "21_stl_array_vector_deque\21_stl_array_vector_deque.vcxproj", "{32EE74F5-B6A1-4C5E-9A30-3612753E1B57}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -341,6 +343,14 @@ Global
 		{CD1523B8-36F4-4ED1-A315-868B2EE13BEF}.Release|x64.Build.0 = Release|x64
 		{CD1523B8-36F4-4ED1-A315-868B2EE13BEF}.Release|x86.ActiveCfg = Release|Win32
 		{CD1523B8-36F4-4ED1-A315-868B2EE13BEF}.Release|x86.Build.0 = Release|Win32
+		{32EE74F5-B6A1-4C5E-9A30-3612753E1B57}.Debug|x64.ActiveCfg = Debug|x64
+		{32EE74F5-B6A1-4C5E-9A30-3612753E1B57}.Debug|x64.Build.0 = Debug|x64
+		{32EE74F5-B6A1-4C5E-9A30-3612753E1B57}.Debug|x86.ActiveCfg = Debug|Win32
+		{32EE74F5-B6A1-4C5E-9A30-3612753E1B57}.Debug|x86.Build.0 = Debug|Win32
+		{32EE74F5-B6A1-4C5E-9A30-3612753E1B57}.Release|x64.ActiveCfg = Release|x64
+		{32EE74F5-B6A1-4C5E-9A30-3612753E1B57}.Release|x64.Build.0 = Release|x64
+		{32EE74F5-B6A1-4C5E-9A30-3612753E1B57}.Release|x86.ActiveCfg = Release|Win32
+		{32EE74F5-B6A1-4C5E-9A30-3612753E1B57}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
