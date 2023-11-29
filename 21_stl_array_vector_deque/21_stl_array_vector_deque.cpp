@@ -133,5 +133,5 @@ int main()
 		cout << "Value :: " << *itt << "\t Poisition :: " << itt - d.begin() << endl;
 		itt = find_if(itt + 1, d.end(), [](int a) {return a == 789; });
 	}
-
+	
 }
